@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <script src="./scripts/main.js"></script>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <table id="site-container">
-    <tr>
-      <td valign="top">
-        <h1>Rock, Paper, Scissors</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+      <div class="site-container">
+        <div class="title-container">
+          <h1>
+            Rock<br />
+            Paper<br />Scissors</h1>
+          <p>Made by simoscam</p>
+        </div>
         <div class="game-container">
-        <div class="round-number-container">
-          <p>Number of rounds:</p>
-          <div class="choices-container">
-            <input type="radio" name="match" id="one-match" value="1">
-            <label for="one-match">1</label>
-            <input type="radio" name="match" id="three-match" value="3">
-            <label for="one-match">3</label>
-            <input type="radio" name="match" id="five-match" value="5">
-            <label for="one-match">5</label>
+          <div class="round-number-container">
+            <label for="options">Number of rounds:</label>
+            <select name="options" id="options">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="play-button-container">
+            <button id="play-button">Play</button>
           </div>
         </div>
-        <div class="play-button-container">
-          <button>Play</button>
-        </div>
       </div>
-    </td>
-    </tr>
-    <tr>
-      <td valign="bottom">
-        <div class="footer">
-          Made by smsc
-        </div>
-      </td>
-    </tr>
-  </table>
-</body>
+  </body>
 </html>
