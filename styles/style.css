@@ -1,0 +1,44 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-button-container,
+.round-number-container
+ {
+  display:flex;
+  justify-content: center;
+}
+
+h1,
+.round-number-container,
+.play-button-container {
+  padding-bottom: 30px;
+}
+
+.footer {
+  height: 100%;
+  text-align: center;
+}
+
+#site-container {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
